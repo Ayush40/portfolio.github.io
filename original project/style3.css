@@ -1,0 +1,28 @@
+body{
+    padding-top:100px;
+    
+    margin-bottom: 0px;
+    font-family: sans-serif;
+}
+
+h1, h2, h3{
+    font-family: serif;
+}
+
+.panel{
+    height: 600px;
+}
+
+.panel:hover{
+    border:1px grey solid;
+}
+
+.img-phone{
+    height: 280px;
+    margin: 0px auto;
+    transition: 0.5s ease-in; /* for transition*/
+}
+
+.img-phone:hover{
+    height: 310px;
+}

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Media Queries With CSS Grid</title>
+    <style>
+        .navbar {
+            background-color: white;
+            border: 5px solid #3574B0;
+            text-align: center;
+            border-radius: 25px;
+            color: #3574B0;
+            font-size: 18px;
+        }
+
+        body,
+        ul,
+        li {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Geneva, Helvetica, sans-serif;
+            background-color: #0047AB;
+        }
+
+        ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(max(200px, 100% / 4), 1fr));
+            grid-auto-flow: dense;
+        }
+
+        li {
+            background-color: white;
+            padding: 5px;
+            height: 500px;
+            margin: 10px;
+            list-style-type: none;
+            color: black;
+            text-align: center;
+            border: 8px solid #3574B0;
+            border-radius: 20px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 14px;
+
+        }
+
+        button {
+            background-color: #3574B0;
+            border: none;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 2px;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <h2>Experience The Next Level Of External Storage</h2>
+        </nav>
+    </header>
+    <ul>
+        <li><img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTsMF1f-nkpCzuDYP2xksQu8fepifQqzGBwTQjiacH5QZze4OtJDzDucEo-KC53CciskXWoABgSU08g0zMcuG-1CMoA1o2WIQd5DMXT_q-1hoUAknkx1bJTag&usqp=CAE"
+                alt="Image" width="245px" height="245px">
+            <h3>Samsung T7 Touch Portable SSD 1TB</h3>
+            <p>Experience the next level of external storage, available in three capacities to suit your needs: 500GB,
+                1TB, or 2TB.</p>
+            <a
+                href='https://www.google.co.in/shopping/product/1?q=storage+device+samsung&prds=epd:7391460605121678436,eto:7391460605121678436_0,pid:7391460605121678436,prmr:1&sa=X&ved=0ahUKEwiY7cGyrLn2AhXx4zgGHajUA90Q9pwGCAU'>
+                <button>
+                    Add to cart
+                </button>
+            </a>
+        </li>
+        <li><img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcT5KoolPg6GMqxpFC24opnKOyKh8jhJm4P_SfilYgFKeD2i8Dpc0Y3WajsXghH_-YcagvFce1lcl-os935fs_BBLeM6pSNAFZFb651XYp-ID_4WYsP7V6AP&usqp=CAE"
+                alt="Image" width="245px" height="245px">
+            <h3>Seagate One Touch 2TB External HDD</h3>
+            <p>Store and access photos and files on the go with Seagate One Touch with password.</p>
+            <a
+                href='https://www.google.co.in/shopping/product/9981633839858587768?q=storage+device&prds=eto:7276891021840160322_0;5296562396565881280_0;2392354312168814794_0&sa=X&ved=0ahUKEwifhOjsq7n2AhXawTgGHbH8B7YQ9pwGCAU'>
+                <button>
+                    Add to cart
+                </button>
+            </a>
+        </li>
+        <li><img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcS7gd-H-RxLZpyplWn0R_iwjmWoE4uRLPEESc0TbEbVrmrhYyajJOt6yBJpbDNcq3iW9z_oh0I-BjBaR32Z9h-HspLJ8AQ2RadKVpRMo04BAIY7FyoU9DDTjQ&usqp=CAE"
+                alt="Image" width="245px" height="245px">
+            <h3>SEAGATE GAME DRIVE FOR PS4 2TB</h3>
+            <p>Store 50+ games with Game Drive for PS4 systems.It works with any-gen PS4 and won't void the PS
+                network.</p>
+            <a
+                href='https://www.google.co.in/shopping/product/18354510439949825152?q=storage+device&prds=eto:9231627351111248079_0;6846350435125428947_0;15745580077413311098_0&sa=X&ved=0ahUKEwjfq7jWq7n2AhWawzgGHWYfCjAQ9pwGCA4'>
+                <button>
+                    Add to cart
+                </button>
+            </a>
+        </li>
+        <li><img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcR0TNH9w5oXWgdAkVHWveayZ0gIINTf0C7AlB-QlRcrbvB0FSkX5CKCIoOw7Cj2OlQ2_JgPGYsuIdY3-qh7j5Hz_iIK_SpEQNNTkHzYVAXr-Jy3WURunJYLHw&usqp=CAE"
+                alt="Image" width="245px" height="245px">
+            <h3>WD 2TB My Passport for Mac</h3>
+            <p>The Western Digital My Passport 2TB Portable Hard Drive for MAC perfectly complements your on-the-go
+                lifestyle.</p>
+            <a
+                href='https://www.google.co.in/shopping/product/1?q=storage+device&prds=epd:7361226094482611219,eto:7361226094482611219_0,pid:7361226094482611219,prmr:1&sa=X&ved=0ahUKEwjUrtrCq7n2AhXPyzgGHcKSBWgQ9pwGCAU'>
+                <button>
+                    Add to cart
+                </button>
+            </a>
+        </li>
+        <li><img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQ71fjpjFCEOlGsjvyM_e9dI3PVFBjfZxMxZFI6Z-ZMscwHdthZwcwSdBbFzInGntwcQls5jyrFstjfTUweXoIR0jApmzBOzoTkF75wQoo&usqp=CAE"
+                alt="Image" width="245px" height="245px">
+            <h3>SanDisk Extreme Pro</h3>
+            <p>From SanDisk, the brand professional photographers worldwide trust to handle best shots on their toughest
+                assignments.</p>
+            <a
+                href='https://www.google.co.in/shopping/product/3584312098770197420?q=storage+device&prds=epd:7601225689163354725,eto:7601225689163354725_0,prmr:1&sa=X&ved=0ahUKEwjBo5ioq7n2AhV_3zgGHU9iB1UQ9pwGCAg'>
+                <button>
+                    Add to cart
+                </button>
+            </a>
+        </li>
+        <li><img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRbaRkHDejeif6j6xK5XK5vRVgKpaovi_ov3E5rMstvV4kQV4YfC6zlMrcUWym2aqHRj__WVAA1w5J8AGLaxeBz5XDLpV_Sg7kYsxOoG5ZGcm_UxsYAUmyseg&usqp=CAE"
+                alt="Image" width="245px" height="245px">
+            <h3>Bitdefender ANTIVIRUS PLUS</h3>
+            <p>Data at rest protection. All data and encryption keys are always encrypted whilst at rest. Self-destruct
+                feature.</p>
+            <a
+                href='https://www.google.co.in/shopping/product/14343679339695364097?q=storage+device&prds=epd:11464584351950227770,eto:11464584351950227770_0,prmr:1&sa=X&ved=0ahUKEwjCxZOWq7n2AhVByTgGHYvODaAQ9pwGCBc'>
+                <button>
+                    Add to cart
+                </button>
+            </a>
+        </li>
+        <li><img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcS8OT9ykmRsNqyG6e2H13eSvMR8O-QHz7_9-4iWTBNdHKV-r2HNbXzQ8SG_9rhuqbsJFvYjZsBMUrgVEBzEuUtWRynMz5tHB-H1NB14suU0LX73C20UHxp9&usqp=CAE"
+                alt="Image" width="210px" height="245px">
+            <h3>Walmeck- 2.5" SATA USB 3.0 1TB</h3>
+            <p>Crafted with care.
+                It is designed keeping your choice and requirement in mind.
+                Hassle-free usage.</p>
+            <a
+                href='https://www.google.co.in/shopping/product/10101556817858161988?q=storage+device&prds=eto:2809225946987718635_0;15490453389123224499_0&sa=X&ved=0ahUKEwi9_6r9qrn2AhXgzjgGHT9iAisQ9pwGCAU'>
+                <button>
+                    Add to cart
+                </button>
+            </a>
+        </li>
+        <li><img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcS9hZPGUoFQ5xQ9tZrOHqwxMbyCGbZD5zDWa3RAXnr913n6pwftRUCnPLyjG13RfYOyf-A95Yzy-LBsLv3dJ6UmCqWorCVF0IZZaxKz8dG409QO92ojCLU65A&usqp=CAE"
+                alt="Image" width="245px" height="228px">
+            <h3>LaCie 14TB d2 Professional USB 3.1</h3>
+            <p>LaCie 14TB d2 Professional USB 3.1 Type-C External Hard Drive USB-C connector for next-generation
+                computers</p>
+            <a
+                href='https://www.google.co.in/shopping/product/827935001786943347?q=storage+device&prds=eto:9065207698675794479_0;6127608006991342203_0;7176324360382352225_0&sa=X&ved=0ahUKEwjJlKKLqrn2AhWxzjgGHfx1DQIQ9pwGCAw'>
+                <button>
+                    Add to cart
+                </button>
+            </a>
+        </li>
+    </ul>
+</body>
+
+</html>

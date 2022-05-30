@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Media Queries With CSS Grid</title>
+    <style>
+        .navbar {
+            background-color: white;
+            border: 5px solid gray;
+            text-align: center;
+            border-radius: 25px;
+            color: gray;
+            font-size: 18px;
+        }
+
+        body,
+        ul,
+        li {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Geneva, Helvetica, sans-serif;
+            background-color: #515C62;
+        }
+
+        ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(max(200px, 100% / 4), 1fr));
+            grid-auto-flow: dense;
+        }
+
+        li {
+            background-color: white;
+            padding: 5px;
+            height: 500px;
+            margin: 10px;
+            list-style-type: none;
+            color: black;
+            text-align: center;
+            border: 8px solid gray;
+            border-radius: 20px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 14px;
+
+        }
+
+        button {
+            background-color: gray;
+            border: none;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 2px;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <h2>Modern Day Softwares For Next Level Experience</h2>
+        </nav>
+    </header>
+    <ul>
+        <li><img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTGRrzXQiZNVuaPiECOa9vrLmDLCY8b9zEtd7x4X3wc7DkmtZBIDXJiwn9MzjHNXhN1Xr-xXU2IMAKMvL_F-qndAo7w9wQkTnu_hIUgWcvU&usqp=CAE"
+                alt="Image" width="245px" height="245px">
+            <h3>Windows 11 Home</h3>
+            <p>At a time when the PC is playing a more central role in our lives, Windows 11 is designed to bring you
+                closer to what
+                you love.</p>
+            <a
+                href='https://www.vevodigital.com/category/software/windows/windows-11-home-oem-activation-key/?utm_source=google&utm_medium=cpc&utm_term=86494&srsltid=AWLEVJwdxOR8xCjRH558EcAcZK_HwqTtUQb7yf5-0FNxToifwRrAweDAT84'>
+                <button>
+                    Add to cart
+                </button>
+            </a>
+        </li>
+        <li><img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQRHKKb-dg82azOFRgQTQyEr0Y7ZOHtfLLjSBJW_lu9reiFSkndB8J4rZwx9Qw4quXu26uP-O1Pp8oRUDS3vxlkSCFewKHVzrSpgp1URQJYOuAqNn_mOWBM_g&usqp=CAE"
+                alt="Image" width="245px" height="245px">
+            <h3>Windows 10 Professional</h3>
+            <p>Genuine Windows 10, real advantages
+                Get the best PC experience possible – only with a genuine version of Windows 10.</p>
+            <a href='https://www.gamerspot.in/product/windows-10/?currency=INR'>
+                <button>
+                    Add to cart
+                </button>
+            </a>
+        </li>
+        <li><img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcR86UR_VK9Hr3WNunFKqpV3VDpcbqvN38K1Jo4_V3cGitjQMw94zGghXjpEWLpY3t4EeEgffsAiTOGAEhZiMkdlQjwAacRaXe5hdnNQImQ_fDOYfTOkBiW6&usqp=CAE"
+                alt="Image" width="245px" height="245px">
+            <h3>Office 2021 Pro Plus</h3>
+            <p>The essentials to get it all done. Office 2021 is for growing small businesses who want the
+                classic Office
+                apps plus Outlook, Publisher and Access.</p>
+            <a href='https://pcgameskey.com/product/office-2021-pro-plus-1pc/?currency=INR'>
+                <button>
+                    Add to cart
+                </button>
+            </a>
+        </li>
+        <li><img src="https://m.media-amazon.com/images/I/71vKG5CnhCL._SL1500_.jpg" alt="Image" width="245px"
+                height="262px">
+            <h3>Xbox Game Pass Ultimate</h3>
+            <p>Xbox Game Pass Ultimate Subscription The membership lets you enjoy your gaming experience like never
+                before!</p>
+            <a href='https://antivirusbuy.in/shop/antivirus/bitdefender-antivirus-plus-1-pc-1-year/'>
+                <button>
+                    Add to cart
+                </button>
+            </a>
+        </li>
+        <li><img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcS0JjZNks2yjrTLhXhL9CF84VeZ2BQ03zv2nue-9--YzGqPBBEAanwe7Quk1vXjUbI8S78SgAm5puRRkHMChjsiuUsUl8mahUXuQmyq5tw&usqp=CAE"
+                alt="Image" width="245px" height="245px">
+            <h3>McAfee AntiVirus Plus</h3>
+            <p>Our powerful combination of performance, accuracy, and reinforcing protections keeps criminals away from
+                your PC and
+                data.</p>
+            <a href='https://vlebazaar.in/McAfee-AntiVirus'>
+                <button>
+                    Add to cart
+                </button>
+            </a>
+        </li>
+        <li><img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQvonbDe7U5ViMFiXnv1zRkd9U1ZOr8JvvNdWV4tTv8c_gk5PtOI09jzGGSV9ZSaEQAs-Ye8RMeQUS9VvKZJMrVf7JxHE0p&usqp=CAE"
+                alt="Image" width="245px" height="245px">
+            <h3>Bitdefender ANTIVIRUS PLUS</h3>
+            <p>Experience True “Set It and Forget It” Security:
+                Easy to Install, Easy to Run, Easy to Check.</p>
+            <a href='https://antivirusbuy.in/shop/antivirus/bitdefender-antivirus-plus-1-pc-1-year/'>
+                <button>
+                    Add to cart
+                </button>
+            </a>
+        </li>
+        <li><img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTIzhDt4ioQldwXH6Yex0v8YBvWTw8Z6Ml4NAgK-IX1VGGI_2e6tDrpYbXE6jpncZ1cu9C2ma73QVjsbilVU3--ievWi660q7W3u0Kc3aM&usqp=CAE"
+                alt="Image" width="210px" height="245px">
+            <h3>JETBRAINS 1 YEAR PRIVATE ACCOUNT</h3>
+            <p>Whatever platform or language you work with, JetBrains has a development tool for you.</p>
+            <a href='https://digitemx.com/product/jetbrains-1-year-private-account/'>
+                <button>
+                    Add to cart
+                </button>
+            </a>
+        </li>
+        <li><img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRwFnTk_5FOuo2Af3xbjdXu7bEbKoKWClBxJYVDIQ04MRIlyLWibEdM3Hnh1B2oxv0-cM3bpmx2Wl3rjDT8_5Snrsh7BAv35VLdFrfqdsMJp3gZuj3A2ROemw&usqp=CAE"
+                alt="Image" width="245px" height="245px">
+            <h3>Adobe Dimension</h3>
+            <p>Adobe Dimension CC is The name of a new and powerful product from Adobe is for designers and enthusiasts
+                in the world of
+                graphics.</p>
+            <a
+                href='https://techloverenterprises.com/product/adobe-dimension-cc-2020/?attribute_pa_operating-system=windows'>
+                <button>
+                    Add to cart
+                </button>
+            </a>
+        </li>
+    </ul>
+</body>
+
+</html>
