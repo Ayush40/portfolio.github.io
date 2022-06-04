@@ -1,5 +1,5 @@
 Hi , 
-My naem is Ayush , This is a portfolio website which helps you a lot.
+My name is Ayush , This is a portfolio website which helps you a lot.
 
 Know more about my code :
 
